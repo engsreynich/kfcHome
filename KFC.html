@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC</title>
+    <link rel="stylesheet" href="./kfc.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="./img/logo_170.png" alt="KFC Logo" class="logo" />
+      <div>
+        <a href="#">HOME</a>
+        <a href="#">MENU</a>
+        <a href="#">PROMOTION</a>
+        <a href="#">DELIVERY</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="hero">
+      <div class="slide active">
+        <img src="./img/nav/KFC-Fan-1-2048x801.jpg" alt="Hero 1" />
+      </div>
+      <div class="slide">
+        <img src="./img/nav/KFC-Fan-2-2048x801.jpg" alt="Hero 2" />
+      </div>
+      <div class="slide">
+        <img src="./img/nav/KFC-Fan-3-2048x801.jpg" alt="Hero 3" />
+      </div>
+      <div class="slide">
+        <img src="./img/nav/KFC-Fan-4-2048x801.jpg" alt="Hero 4" />
+      </div>
+
+      <button class="arrow prev" onclick="changeSlide(-1)">‹</button>
+      <button class="arrow next" onclick="changeSlide(1)">›</button>
+
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section>
+      <div class="grid">
+        <div class="card">
+          <img src="./img/menu/photo_2024-04-26_01-05-34.jpg" alt="Burger" />
+          <div class="card-body">
+            <h3>Burger</h3>
+            <p>Combo Meals</p>
+            <button>BROWSE MENU</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/menu/Side-Order.jpg" alt="Classic Meals" />
+          <div class="card-body">
+            <h3>Classic Meals</h3>
+            <p>Our Best Sellers</p>
+            <button>BROWSE MENU</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./img/menu/Signature-Box-Meal-New-Copy.jpg"
+            alt="Box Meal"
+          />
+          <div class="card-body">
+            <h3>Box Meal</h3>
+            <p>Value Box Meals</p>
+            <button>BROWSE MENU</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/menu/Side-Order.jpg" alt="Side Order" />
+          <div class="card-body">
+            <h3>Side Order</h3>
+            <p>Add-On Sides</p>
+            <button>BROWSE MENU</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section>
+      <div class="banner">
+        <img src="./img/photo_2024-04-26_01-05-34 (1).jpg" alt="KFC Banner" />
+        <img src="./img/kfc-welcome-page.jpg" alt="Welcome" />
+      </div>
+    </section>
+
+    <!-- Promotions -->
+    <section style="background: #f8f8f8">
+      <h2>Promotions</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="./img/pro/Colonel-Stacker-1.jpg" alt="Colonel Stacker" />
+        </div>
+        <div class="card">
+          <img src="./img/pro/photo_2025-03-12_13-58-04.jpg" alt="Promotion" />
+        </div>
+        <div class="card">
+          <img src="./img/pro/Spicy-Mala-Crunch.jpg" alt="Spicy Mala" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Activities -->
+    <section>
+      <h2>Social Activities</h2>
+      <div class="grid">
+        <div class="card">
+          <img
+            src="./img/social/KFC-Charity-and-Donation-2-1.jpg"
+            alt="Charity"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/social/KFC-Charity-and-Donation-4.jpg"
+            alt="Donation"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="./img/social/KFC-Charity-and-Donation-5.jpg"
+            alt="Community"
+          />
+        </div>
+        <div class="card">
+          <img src="./img/social/photo_2023-05-10_15-03-21.jpg" alt="Social" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <div
+      class="scroll-top"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    >
+      ↑
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>About KFC Cambodia</h3>
+          <p>
+            Established in March 2008 in Cambodia. First restaurant situated
+            along Monivong Blvd, Phnom Penh. KFC is one of Royal Group Companies
+            business, a partnership with Malaysian QSR brands.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Our Menu</h3>
+          <ul>
+            <li><a href="#">Burger</a></li>
+            <li><a href="#">Classic Meals</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Box Meals</a></li>
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Family</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Promotions</h3>
+          <ul>
+            <li><a href="#">Tuesday Special</a></li>
+            <li><a href="#">Zinger Double Down</a></li>
+            <li><a href="#">Crispy Tenders</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>
+            No. 246, 5th Floor, Royal Group Building<br />Preah Monivong Blvd,
+            Phnom Penh<br />
+            (855)-23 224 593<br />
+            Delivery: 089 89 6000<br />
+            info@kfc.com.kh
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Copyright 2024 KFC Cambodia. All Rights Reserved. || Privacy
+          PolicyTerms & ConditionPrivacy PolicyTerms & Condition
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function showSlide(n) {
+        slides.forEach((s) => s.classList.remove("active"));
+        dots.forEach((d) => d.classList.remove("active"));
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }
+
+      function changeSlide(n) {
+        showSlide(currentSlide + n);
+      }
+      function goToSlide(n) {
+        showSlide(n);
+      }
+
+      setInterval(() => changeSlide(1), 5000);
+    </script>
+  </body>
+</html>
